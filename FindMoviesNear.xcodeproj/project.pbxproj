@@ -16,6 +16,15 @@
 		B68A81E71ACDBA4F0067ACB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68A81E61ACDBA4F0067ACB1 /* Images.xcassets */; };
 		B68A81EA1ACDBA4F0067ACB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68A81E81ACDBA4F0067ACB1 /* LaunchScreen.xib */; };
 		B68A81F61ACDBA4F0067ACB1 /* FindMoviesNearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A81F51ACDBA4F0067ACB1 /* FindMoviesNearTests.m */; };
+		B68A82061ACDBAC30067ACB1 /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A82051ACDBAC30067ACB1 /* Movies.m */; };
+		B68A82151ACDC53A0067ACB1 /* MovieBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A82141ACDC53A0067ACB1 /* MovieBuilder.m */; };
+		B68A82181ACDC5AC0067ACB1 /* TheaterCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A82171ACDC5AC0067ACB1 /* TheaterCommunicator.m */; };
+		B68A821B1ACDCA340067ACB1 /* MovieTheatreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A821A1ACDCA340067ACB1 /* MovieTheatreManager.m */; };
+		B68A82201ACDCE4B0067ACB1 /* Theatres.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A821F1ACDCE4B0067ACB1 /* Theatres.m */; };
+		B68A828F1ACDD8510067ACB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A828E1ACDD8510067ACB1 /* CoreLocation.framework */; };
+		B68A82921ACDD8940067ACB1 /* TheatreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A82911ACDD8940067ACB1 /* TheatreViewController.m */; };
+		B68A82951ACDE2DF0067ACB1 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A82941ACDE2DF0067ACB1 /* NSString+URLEncoding.m */; };
+		B68A82991ACDF4B60067ACB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68A82981ACDF4B60067ACB1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,24 @@
 		B68A81EF1ACDBA4F0067ACB1 /* FindMoviesNearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMoviesNearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68A81F41ACDBA4F0067ACB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68A81F51ACDBA4F0067ACB1 /* FindMoviesNearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindMoviesNearTests.m; sourceTree = "<group>"; };
+		B68A82041ACDBAC30067ACB1 /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
+		B68A82051ACDBAC30067ACB1 /* Movies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
+		B68A82131ACDC53A0067ACB1 /* MovieBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieBuilder.h; path = ../MovieBuilder.h; sourceTree = "<group>"; };
+		B68A82141ACDC53A0067ACB1 /* MovieBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieBuilder.m; path = ../MovieBuilder.m; sourceTree = "<group>"; };
+		B68A82161ACDC5AC0067ACB1 /* TheaterCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterCommunicator.h; sourceTree = "<group>"; };
+		B68A82171ACDC5AC0067ACB1 /* TheaterCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterCommunicator.m; sourceTree = "<group>"; };
+		B68A82191ACDCA340067ACB1 /* MovieTheatreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTheatreManager.h; sourceTree = "<group>"; };
+		B68A821A1ACDCA340067ACB1 /* MovieTheatreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTheatreManager.m; sourceTree = "<group>"; };
+		B68A821C1ACDCC4D0067ACB1 /* TheaterCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterCommunicatorDelegate.h; sourceTree = "<group>"; };
+		B68A821D1ACDCC970067ACB1 /* MovieTheatreManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTheatreManagerDelegate.h; sourceTree = "<group>"; };
+		B68A821E1ACDCE4B0067ACB1 /* Theatres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatres.h; sourceTree = "<group>"; };
+		B68A821F1ACDCE4B0067ACB1 /* Theatres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatres.m; sourceTree = "<group>"; };
+		B68A828E1ACDD8510067ACB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B68A82901ACDD8940067ACB1 /* TheatreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreViewController.h; sourceTree = "<group>"; };
+		B68A82911ACDD8940067ACB1 /* TheatreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreViewController.m; sourceTree = "<group>"; };
+		B68A82931ACDE2DF0067ACB1 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		B68A82941ACDE2DF0067ACB1 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		B68A82981ACDF4B60067ACB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68A82991ACDF4B60067ACB1 /* MapKit.framework in Frameworks */,
+				B68A828F1ACDD8510067ACB1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +97,8 @@
 		B68A81C71ACDBA4F0067ACB1 = {
 			isa = PBXGroup;
 			children = (
+				B68A82981ACDF4B60067ACB1 /* MapKit.framework */,
+				B68A828E1ACDD8510067ACB1 /* CoreLocation.framework */,
 				B68A81D21ACDBA4F0067ACB1 /* FindMoviesNear */,
 				B68A81F21ACDBA4F0067ACB1 /* FindMoviesNearTests */,
 				B68A81D11ACDBA4F0067ACB1 /* Products */,
@@ -86,12 +117,12 @@
 		B68A81D21ACDBA4F0067ACB1 /* FindMoviesNear */ = {
 			isa = PBXGroup;
 			children = (
+				B68A82031ACDBABA0067ACB1 /* Model */,
 				B68A81D71ACDBA4F0067ACB1 /* AppDelegate.h */,
 				B68A81D81ACDBA4F0067ACB1 /* AppDelegate.m */,
-				B68A81DD1ACDBA4F0067ACB1 /* MasterViewController.h */,
-				B68A81DE1ACDBA4F0067ACB1 /* MasterViewController.m */,
-				B68A81E01ACDBA4F0067ACB1 /* DetailViewController.h */,
-				B68A81E11ACDBA4F0067ACB1 /* DetailViewController.m */,
+				B68A82961ACDE4430067ACB1 /* Custom Classes */,
+				B68A82971ACDE4510067ACB1 /* View Controllers */,
+				B68A82021ACDBA8C0067ACB1 /* Helpers */,
 				B68A81E31ACDBA4F0067ACB1 /* Main.storyboard */,
 				B68A81E61ACDBA4F0067ACB1 /* Images.xcassets */,
 				B68A81E81ACDBA4F0067ACB1 /* LaunchScreen.xib */,
@@ -125,6 +156,54 @@
 				B68A81F41ACDBA4F0067ACB1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B68A82021ACDBA8C0067ACB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B68A82131ACDC53A0067ACB1 /* MovieBuilder.h */,
+				B68A82141ACDC53A0067ACB1 /* MovieBuilder.m */,
+				B68A821C1ACDCC4D0067ACB1 /* TheaterCommunicatorDelegate.h */,
+				B68A82161ACDC5AC0067ACB1 /* TheaterCommunicator.h */,
+				B68A82171ACDC5AC0067ACB1 /* TheaterCommunicator.m */,
+				B68A821D1ACDCC970067ACB1 /* MovieTheatreManagerDelegate.h */,
+				B68A82191ACDCA340067ACB1 /* MovieTheatreManager.h */,
+				B68A821A1ACDCA340067ACB1 /* MovieTheatreManager.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B68A82031ACDBABA0067ACB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B68A82041ACDBAC30067ACB1 /* Movies.h */,
+				B68A82051ACDBAC30067ACB1 /* Movies.m */,
+				B68A821E1ACDCE4B0067ACB1 /* Theatres.h */,
+				B68A821F1ACDCE4B0067ACB1 /* Theatres.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B68A82961ACDE4430067ACB1 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B68A82931ACDE2DF0067ACB1 /* NSString+URLEncoding.h */,
+				B68A82941ACDE2DF0067ACB1 /* NSString+URLEncoding.m */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		B68A82971ACDE4510067ACB1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B68A81DD1ACDBA4F0067ACB1 /* MasterViewController.h */,
+				B68A81DE1ACDBA4F0067ACB1 /* MasterViewController.m */,
+				B68A82901ACDD8940067ACB1 /* TheatreViewController.h */,
+				B68A82911ACDD8940067ACB1 /* TheatreViewController.m */,
+				B68A81E01ACDBA4F0067ACB1 /* DetailViewController.h */,
+				B68A81E11ACDBA4F0067ACB1 /* DetailViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +306,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68A82061ACDBAC30067ACB1 /* Movies.m in Sources */,
 				B68A81E21ACDBA4F0067ACB1 /* DetailViewController.m in Sources */,
 				B68A81DF1ACDBA4F0067ACB1 /* MasterViewController.m in Sources */,
+				B68A82201ACDCE4B0067ACB1 /* Theatres.m in Sources */,
 				B68A81D91ACDBA4F0067ACB1 /* AppDelegate.m in Sources */,
 				B68A81D61ACDBA4F0067ACB1 /* main.m in Sources */,
 				B68A81DC1ACDBA4F0067ACB1 /* FindMoviesNear.xcdatamodeld in Sources */,
+				B68A82181ACDC5AC0067ACB1 /* TheaterCommunicator.m in Sources */,
+				B68A82921ACDD8940067ACB1 /* TheatreViewController.m in Sources */,
+				B68A82151ACDC53A0067ACB1 /* MovieBuilder.m in Sources */,
+				B68A82951ACDE2DF0067ACB1 /* NSString+URLEncoding.m in Sources */,
+				B68A821B1ACDCA340067ACB1 /* MovieTheatreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FindMoviesNear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FindMoviesNear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

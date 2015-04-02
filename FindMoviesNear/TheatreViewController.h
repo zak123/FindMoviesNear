@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  TheatreViewController.h
 //  FindMoviesNear
 //
 //  Created by Zachary Mallicoat on 4/2/15.
@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import <MapKit/MapKit.h>
 #import "Movies.h"
 #import "Theatres.h"
 #import "TheaterCommunicator.h"
 #import "MovieTheatreManager.h"
 #import "MovieBuilder.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface DetailViewController : UIViewController<MKMapViewDelegate>
+@interface TheatreViewController : UITableViewController <CLLocationManagerDelegate>
 
-@property (strong, nonatomic) Theatres *detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) Movies *detailItem;
+@property (strong, nonatomic) NSArray *theatres;
+
+
 
 @end
-

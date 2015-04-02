@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Movies.h"
+#import "Theatres.h"
+#import "TheaterCommunicator.h"
+#import "MovieTheatreManager.h"
+#import "MovieBuilder.h"
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
-
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@interface MasterViewController : UITableViewController
 
 @end
 

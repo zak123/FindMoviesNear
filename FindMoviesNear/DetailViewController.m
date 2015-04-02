@@ -12,31 +12,50 @@
 
 @end
 
-@implementation DetailViewController
+@implementation DetailViewController {
+    CLLocationCoordinate2D *_center;
+}
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-            
-        // Update the view.
-        [self configureView];
-    }
-}
+
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
+    
 }
 
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
+    
+    _mapView.delegate = self;
+
+    NSNumber *longitude = self.detailItem.theatreLongitude;
+    
+    NSLog(@"hello");
+    //double lattitude = [self.detailItem.theatreLattitude doubleValue];
+    
+    /*MKPointAnnotation *theatreMarker = [[MKPointAnnotation alloc] init];
+    CLLocationCoordinate2D theatreLocation;
+    theatreLocation.longitude = longitude;
+    theatreLocation.latitude = lattitude;
+    theatreMarker.coordinate = theatreLocation;
+    theatreMarker.title = self.detailItem.theatreName;
+    
+    MKCoordinateRegion startingRegion;
+    startingRegion.center = theatreLocation;
+    
+    
+    [self.mapView addAnnotation:theatreMarker];
+    [self.mapView setRegion:startingRegion];
+*/
+    
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
