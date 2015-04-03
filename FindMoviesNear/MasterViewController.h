@@ -13,6 +13,8 @@
 #import "TheaterCommunicator.h"
 #import "MovieTheatreManager.h"
 #import "MovieBuilder.h"
+#import "TheatreViewController.h"
+
 
 @interface MasterViewController : UITableViewController
 

@@ -65,13 +65,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
+//        DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
+        TheatreViewController *theatreVC = (TheatreViewController *)segue.destinationViewController;
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         
         Movies *selectedMovie = _movies[indexPath.row];
-        detailVC.detailItem = selectedMovie;
+        theatreVC.detailItem = selectedMovie;
      
     }
 }

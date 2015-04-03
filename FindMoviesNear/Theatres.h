@@ -15,8 +15,8 @@
 @property (nonatomic, strong) NSString *theatreAddress;
 @property (nonatomic, strong) NSString *theatreName;
 //@property (nonatomic, strong) CLLocation *theatreLocation;
-@property (nonatomic, assign) NSNumber *theatreLongitude;
-@property (nonatomic, assign) NSNumber *theatreLattitude;
+@property (nonatomic, retain) NSNumber *theatreLongitude;
+@property (nonatomic, retain) NSNumber *theatreLattitude;
 
 
 

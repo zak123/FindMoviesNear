@@ -32,17 +32,12 @@
     
     _mapView.delegate = self;
 
-    NSNumber *longitude = self.detailItem.theatreLongitude;
-    
-    NSLog(@"hello");
-    //double lattitude = [self.detailItem.theatreLattitude doubleValue];
-    
-    /*MKPointAnnotation *theatreMarker = [[MKPointAnnotation alloc] init];
+    MKPointAnnotation *theatreMarker = [[MKPointAnnotation alloc] init];
     CLLocationCoordinate2D theatreLocation;
-    theatreLocation.longitude = longitude;
-    theatreLocation.latitude = lattitude;
+    theatreLocation.longitude = [self.detailItemTheatre.theatreLongitude doubleValue];
+    theatreLocation.latitude = [self.detailItemTheatre.theatreLattitude doubleValue];
     theatreMarker.coordinate = theatreLocation;
-    theatreMarker.title = self.detailItem.theatreName;
+    theatreMarker.title = self.detailItemTheatre.theatreName;
     
     MKCoordinateRegion startingRegion;
     startingRegion.center = theatreLocation;
@@ -50,7 +45,7 @@
     
     [self.mapView addAnnotation:theatreMarker];
     [self.mapView setRegion:startingRegion];
-*/
+
     
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];

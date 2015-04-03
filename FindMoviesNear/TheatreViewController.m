@@ -93,6 +93,7 @@
     _locationManager.delegate = self;
     _locationManager.distanceFilter = kCLDistanceFilterNone;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [_locationManager requestWhenInUseAuthorization];
     [_locationManager startUpdatingLocation];
     //------
 }
@@ -142,7 +143,9 @@
             
             NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
             DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
-            detailVC.detailItem = self.theatres[indexPath.row];;
+            
+            
+            detailVC.detailItemTheatre = self.theatres[indexPath.row];;
     }
     
 }

@@ -17,8 +17,7 @@
 
 @interface DetailViewController : UIViewController<MKMapViewDelegate>
 
-@property (strong, nonatomic) Theatres *detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) Theatres *detailItemTheatre;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
